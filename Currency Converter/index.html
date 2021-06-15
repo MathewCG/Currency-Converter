@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+ <head>
+  <link rel="stylesheet" href="Assets/css/home.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curreny Converter</title>
+  <link rel="shortcut icon" type="image/png" href="images/CurrencyConverterFavicon.png";>
+  <style> </style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+ </head>
+<body>
+    <nav class="nav_bar" id="nav_bar">
+        <ul class="nav_ul">
+            <li class="nav_li">
+                <div id="digitalClock"></div>
+            </li>
+            <li class="nav_li"></li>
+            <li class="nav_li">
+                <button id="themeButton" onclick="changeTheme()">Change Theme</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="currencyConverter">
+        <input type="number" id="inputAmount" placeholder="Amount" value="1">
+        <select name="FirstCurrency" id="fCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="CAD">CAD</option>
+            <option value="AUD">AUD</option>
+            <option value="NZD">NZD</option>
+            <option value="CHF">CHF</option>
+            <option value="JPY">JPY</option>
+            
+        </select>
+        <!--
+        <input type="text" id="sCurrency" placeholder="Convert To" value="EUR">
+        -->
+        <select name="SecondCurrency" id="sCurrency" >
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="CAD">CAD</option>
+            <option value="AUD">AUD</option>
+            <option value="NZD">NZD</option>
+            <option value="CHF">CHF</option>
+            <option value="JPY">JPY</option>
+        </select>
+        <button id="submit" onclick="">Convert</button>
+        <div id="amountConverted">
+            <h1 id="converted"></h1>
+        </div>
+    </div>
+
+ <script type="text/javascript" src="Assets/js/themeButton.js"></script>
+ <script type="text/javascript" src="Assets/js/digitalClock.js"></script>
+ <script type="text/javascript" src="Assets/js/currencyConverter.js"></script>
+</body>
+</html>
