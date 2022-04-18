@@ -4,7 +4,7 @@ $(function () {
         var $sCurrency = $("#sCurrency");
         var $api = 'https://free.currconv.com/api/v7/convert?q=';
         var $randomUnderscore = '_';
-        var $apiKey = '&compact=ultra&apiKey=2eac7373b7f1a66a6884';
+        var $apiKey = '';
         let currencySymbol;
 
 
